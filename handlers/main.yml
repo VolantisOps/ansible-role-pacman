@@ -1,0 +1,8 @@
+---
+- name: rebuild pacman.conf
+  assemble:
+    src: /etc/pacman.d/fragments.d
+    dest: /etc/pacman.conf
+    owner: root
+    group: root
+    mode: 0644
